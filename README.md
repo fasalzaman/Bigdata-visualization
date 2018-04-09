@@ -72,23 +72,11 @@ f.	Also, recall that you obtained the Weather API key back in the Task 3 of the 
 4.	Select Next, and on the following screen, select Deploy.
 5.	The page should begin deploying your application while showing you a status of what is currently happening. 
 NOTE: If you run into errors during the deployment that indicate a bad request or unauthorized, verify that the user you are logged into the portal with an account that is either a Service Administrator or a Co-Administrator. You won’t have permissions to deploy the website otherwise.
-6.	After a short time, the deployment will complete, then go to Azure portal, Select the deployed web app. In the side bar under Settings, Select Application Settings.
- 
-7.	Under the heading Application Settings, Click on +Add new settings.
- 
-8.	Now you can follow the below steps.
-•	Enter mlApiKey in the first box and provide keys that we used for template deployment (Recall Exercise.7, Task.1)
-•	Then click on +Add new setting and Enter mlWorkspaceId in the first box and provide the value (Recall Exercise.7, Task.1) in the second.
-•	Like this add mlServiceId, weatherApiKey and corresponding values.
- 
-9.	Now we need to restart the web app. For that click on the Overview tab of the web app and click on Restart.
- 
-10.	After the restart, copy the web app URL and navigate to the url by pasting it in a browser.
- 
-11.	You can find the chances of delay by providing origin, destination, date, and time in the application. Your newly deployed web application will look like this.
- 
-12.	Try with few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the Weather Underground API.
-13.	Congratulations! You have built and deployed an intelligent system to Azure. 
+6.	After a short time, the deployment will complete, then go to Azure portal, Select the deployed web app.
+7. Copy the web app URL and navigate to the url by pasting it in a browser.
+8.	You can find the chances of delay by providing origin, destination, date, and time in the application. Your newly deployed web application will look like this.
+9.	Try with few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the Weather Underground API.
+10.	Congratulations! You have built and deployed an intelligent system to Azure. 
 # After the hands-on lab 
 Duration: 10 minutes</br></br>
 In this exercise, attendees will deprovision any Azure resources that were created in support of the lab.
@@ -97,7 +85,6 @@ In this exercise, attendees will deprovision any Azure resources that were creat
 2.	Search for the name of your research group and select it from the list.</br>
 3.	Select Delete in the command bar and confirm the deletion by re-typing the Resource group name and selecting Delete.</br>
 You should follow all steps provided after attending the Hands-on lab.</br>
-
 
 # Help and Support
 
