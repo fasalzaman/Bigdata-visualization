@@ -63,8 +63,8 @@ In this exercise, you will deploy an intelligent web application to Azure from G
 *	Enter a sitename(must be unique) and site plan name
 *	Leave repoUrl and branch as default.
 *	Finally, enter the ML API and Weather API information. 
-  *	Recall that you recorded the ML API information back in Exercise 1, Task 9.
-    *	This information can be obtained on your Machine Learning web service page (https://services.azureml.net, then go to the Consume tab.
+    *	Recall that you recorded the ML API information back in Exercise 1, Task 9.
+      *	This information can be obtained on your Machine Learning web service page (https://services.azureml.net, then go to the Consume tab.
     *	The Primary Key listed is your ML API key
     *	In the Request-Response URL, the GUID after subscriptions/ is your ML Workspace Id
     *	In the Request-Response URL, the GUID after services/ is your ML Service Id 
