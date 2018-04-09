@@ -50,6 +50,55 @@ You are provided a [Data Science Virtual Machine - Windows 2016](https://azurema
 
 Instead of Exercise 7 in the lab guide, atendees should continue the lab with Exercise 7 provided in this document. .
 
+# 7: Deploy intelligent web app
+Duration: 20 minutes</br></br>
+In this exercise, you will deploy an intelligent web application to Azure from GitHub. This application leverages the operationalized machine learning model that was deployed in Exercise 1 to bring action-oriented insight to an already existing business process.
+## Task 1: Deploy web app from GitHub
+1.	Open another tab in browser where you’ve logged to Azure
+2.	Launch  https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fspektraazurelabs.blob.core.windows.net%2Fbigdata-visualization%2Fbigdatadeployapp.json URL in the newly opened tab, this will open azure portal deployment page.
+
+3.	On the deployment page, ensure the fields are populated correctly. 
+a.	Ensure that Subscription are selected.
+b.	Select the Resource Group that you have been using throughout this lab.
+c.	Enter a sitename(must be unique) and site plan name
+d.	Leave repoUrl and branch as default.
+e.	Finally, enter the ML API and Weather API information. 
+i.	Recall that you recorded the ML API information back in Exercise 1, Task 9.
+1.	This information can be obtained on your Machine Learning web service page (https://services.azureml.net, then go to the Consume tab.
+2.	The Primary Key listed is your ML API key
+3.	In the Request-Response URL, the GUID after subscriptions/ is your ML Workspace Id
+4.	In the Request-Response URL, the GUID after services/ is your ML Service Id 
+f.	Also, recall that you obtained the Weather API key back in the Task 3 of the prerequisite steps for the lab. Insert that key into the Weather Api Key field. 
+4.	Select Next, and on the following screen, select Deploy.
+5.	The page should begin deploying your application while showing you a status of what is currently happening. 
+NOTE: If you run into errors during the deployment that indicate a bad request or unauthorized, verify that the user you are logged into the portal with an account that is either a Service Administrator or a Co-Administrator. You won’t have permissions to deploy the website otherwise.
+6.	After a short time, the deployment will complete, then go to Azure portal, Select the deployed web app. In the side bar under Settings, Select Application Settings.
+ 
+7.	Under the heading Application Settings, Click on +Add new settings.
+ 
+8.	Now you can follow the below steps.
+•	Enter mlApiKey in the first box and provide keys that we used for template deployment (Recall Exercise.7, Task.1)
+•	Then click on +Add new setting and Enter mlWorkspaceId in the first box and provide the value (Recall Exercise.7, Task.1) in the second.
+•	Like this add mlServiceId, weatherApiKey and corresponding values.
+ 
+9.	Now we need to restart the web app. For that click on the Overview tab of the web app and click on Restart.
+ 
+10.	After the restart, copy the web app URL and navigate to the url by pasting it in a browser.
+ 
+11.	You can find the chances of delay by providing origin, destination, date, and time in the application. Your newly deployed web application will look like this.
+ 
+12.	Try with few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the Weather Underground API.
+13.	Congratulations! You have built and deployed an intelligent system to Azure. 
+# After the hands-on lab 
+Duration: 10 minutes</br></br>
+In this exercise, attendees will deprovision any Azure resources that were created in support of the lab.
+## Task 1: Delete resource group
+1.	Using the Azure portal, navigate to the Resource group you used throughout this hands-on lab by selecting Resource groups in the left menu.</br>
+2.	Search for the name of your research group and select it from the list.</br>
+3.	Select Delete in the command bar and confirm the deletion by re-typing the Resource group name and selecting Delete.</br>
+You should follow all steps provided after attending the Hands-on lab.</br>
+
+
 # Help and Support
 
 If you require any help during the workshop, please reach out to the instructor / proctors. Instructors / proctors might escalate the issue to remote support team, at that time, please pass on your AAD User ID (aad_user_xyz), so that it is easier to look up your environment.
