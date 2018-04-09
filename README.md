@@ -30,40 +30,25 @@ Open a browser instance in private or incognito mode and login to [Microsoft Azu
 You are provided a [Data Science Virtual Machine - Windows 2016](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.windows-data-science-vm) with additional softwares configured. FQDN of the virtual machine and administrator credentials are provided in the lab details page. You can remote into the virutal machine using the provided credentials and validate the following:
 
 > Note: DSVM is provisioned in the resource group, in which you have access. Once you login to Microsoft Azure Portal, you can navigate to this VM to find more details.
-## verify the following Azure resources
-* **Machine Learning Studio Workspace** is provisioned in the resource group, in which you have access
+## Verify the following Azure resources
+* **Machine Learning Studio Workspace** is provisioned in the resource group, in which you have access.
 
 * **Azure HDInsight Cluster** : Refer registration page/email for cluster credentials and cluster ssh credentials. .  
-•	Other Azure resources such as **Virtual Network, Public IP, Network Interface, Load Balancer, Storage accounts** as required by HDInsight, VM and Machine learning studio.
+* Other Azure resources such as **Virtual Network, Public IP, Network Interface, Load Balancer, Storage accounts** as required by HDInsight, VM and Machine learning studio.
 
 # Known Issues
 
-### Docker for Windows is not starting
+### Failure while creating Data Factory
 
 > **Possible Solutions**:
 
- * Check and ensure if Docker is running in 'Linux Containers' mode
- * Virtual Machine may not be running in a nested-virtualization supported family. Check if it is D4_v3 or D4S_v3.
-
-### Failure while trying to create NC6 virtual machines
-
-> **Possible Solutions**:
- 
- * Mostly this could be quota issue. You can delete the current VM, and try to create another VM in South Central US, with NV6 size. If you are provided user@microsofthol.onmicrosoft.com account, then you should try NV6 in South Central US, irrespective of the resource group region.
+ * Check and ensure if the Data Factory Version used is V1.
 
 # Notes to Instructors / Proctors
 
-### **Avoid Quota Issue** for Linux Ubuntu DSVM Virtual Machine Creation
+###  Replace Exercise 7 with the following Exercise in this document
 
-If your users are provided with user@microsofthol.onmicrosoft.com account, they should create Linux Ubuntu DSVM in South Central US with NV6 compute family. Otherwise, they will get error due to quota issues.
-
-### **Configure Lower Size** for Azure Resources
-
-As you walk through attendees through lab steps, request them to create resources in the lower size / capacity, specifically for the following:
-
- * Machine Learning Model Management - DEVTEST or S1
- * Machine Learning Experimentation - DEVTEST or S1
- * HDInsight Cluster (Spark 2.1 on Linux) - Least size available with **only one worker node**.
+Instead of Exercise 7 in the lab guide, atendees should continue the lab with Exercise 7 provided in this document. .
 
 # Help and Support
 
