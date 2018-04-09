@@ -30,22 +30,11 @@ Open a browser instance in private or incognito mode and login to [Microsoft Azu
 You are provided a [Data Science Virtual Machine - Windows 2016](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.windows-data-science-vm) with additional softwares configured. FQDN of the virtual machine and administrator credentials are provided in the lab details page. You can remote into the virutal machine using the provided credentials and validate the following:
 
 > Note: DSVM is provisioned in the resource group, in which you have access. Once you login to Microsoft Azure Portal, you can navigate to this VM to find more details.
+## verify the following Azure resources
+* **Machine Learning Studio Workspace** is provisioned in the resource group, in which you have access
 
-* **Docker for Windows Community Edition** is installed on the virtual machine. You should see the icon on **Desktop** or else, you can find / search it from the **Start Menu**
-
-  * Start **Docker for Windows** by clicking on the icon.
-  
-  * Wait for the Welcome message to show up, which will also say `Docker is now up and running!`
-  
-  * Open a command prompt and run the command `docker run docker/whalesay cowsay "Hello"`
-  
-  * Above command should run successfully and show you the output.
-
-* **Azure Machine Learning Workbench** installer is downloaded and kept in **Desktop**.
-
-## Install Azure Machine Learning Workbench
-
-Launch msi provided in **Desktop** and follow the instructions to install **Azure Machine Learning Workbench** on the virtual machine. Please note that it might take 45 minutes to an hour sometimes for installation.
+* **Azure HDInsight Cluster** : Refer registration page/email for cluster credentials and cluster ssh credentials. .  
+•	Other Azure resources such as **Virtual Network, Public IP, Network Interface, Load Balancer, Storage accounts** as required by HDInsight, VM and Machine learning studio.
 
 # Known Issues
 
