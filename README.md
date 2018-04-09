@@ -68,6 +68,7 @@ In this exercise, you will deploy an intelligent web application to Azure from G
         *	The **Primary Key** listed is your ML API key
         *	In the Request-Response URL, the GUID after subscriptions/ is your **ML Workspace Id**
         *	In the Request-Response URL, the GUID after services/ is your **ML Service Id** 
+         ![alt text](Images/05_consume_tab.png)
     *	Also, recall that you obtained the **Weather API key** back in the Task 3 of the prerequisite steps for the lab. Insert that key into the Weather Api Key field. 
 4.	Select **Next**, and on the following screen, **select Deploy**.
 5.	The page should begin deploying your application while showing you a status of what is currently happening. 
@@ -76,7 +77,9 @@ In this exercise, you will deploy an intelligent web application to Azure from G
 
 6.	After a short time, the deployment will complete, then go to **Azure portal**, Select the deployed web app.
 7. Copy the web app URL and navigate to the url by pasting it in a browser.
+![alt text](Images/06_webapp_url.png)	
 8.	You can find the chances of delay by providing **origin, destination, date, and time** in the application. Your newly deployed web application will look like this.
+![alt text](Images/07_adventure_wt.png)
 9.	Try with few different combinations of origin, destination, date, and time in the application. The information you are shown is the result of both the ML API you published, as well as information retrieved from the Weather Underground API.
 10.	Congratulations! You have built and deployed an intelligent system to Azure. 
 # After the hands-on lab 
