@@ -58,17 +58,17 @@ In this exercise, you will deploy an intelligent web application to Azure from G
 2.	Launch  https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fspektraazurelabs.blob.core.windows.net%2Fbigdata-visualization%2Fbigdatadeployapp.json URL in the newly opened tab, this will open azure portal deployment page.
 
 3.	On the deployment page, ensure the fields are populated correctly. 
-a.	Ensure that Subscription are selected.
-b.	Select the Resource Group that you have been using throughout this lab.
-c.	Enter a sitename(must be unique) and site plan name
-d.	Leave repoUrl and branch as default.
-e.	Finally, enter the ML API and Weather API information. 
-i.	Recall that you recorded the ML API information back in Exercise 1, Task 9.
-1.	This information can be obtained on your Machine Learning web service page (https://services.azureml.net, then go to the Consume tab.
-2.	The Primary Key listed is your ML API key
-3.	In the Request-Response URL, the GUID after subscriptions/ is your ML Workspace Id
-4.	In the Request-Response URL, the GUID after services/ is your ML Service Id 
-f.	Also, recall that you obtained the Weather API key back in the Task 3 of the prerequisite steps for the lab. Insert that key into the Weather Api Key field. 
+* Ensure that Subscription are selected.
+*	Select the Resource Group that you have been using throughout this lab.
+*	Enter a sitename(must be unique) and site plan name
+*	Leave repoUrl and branch as default.
+*	Finally, enter the ML API and Weather API information. 
+**	Recall that you recorded the ML API information back in Exercise 1, Task 9.
+***	This information can be obtained on your Machine Learning web service page (https://services.azureml.net, then go to the Consume tab.
+***	The Primary Key listed is your ML API key
+***	In the Request-Response URL, the GUID after subscriptions/ is your ML Workspace Id
+***	In the Request-Response URL, the GUID after services/ is your ML Service Id 
+**	Also, recall that you obtained the Weather API key back in the Task 3 of the prerequisite steps for the lab. Insert that key into the Weather Api Key field. 
 4.	Select Next, and on the following screen, select Deploy.
 5.	The page should begin deploying your application while showing you a status of what is currently happening. 
 NOTE: If you run into errors during the deployment that indicate a bad request or unauthorized, verify that the user you are logged into the portal with an account that is either a Service Administrator or a Co-Administrator. You won’t have permissions to deploy the website otherwise.
