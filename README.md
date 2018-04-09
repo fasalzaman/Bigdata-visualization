@@ -1,6 +1,6 @@
 # Introduction
 
-Professional AI Developers is a two day workshop lead by Microsoft or Microsoft partners. These two days focus on hands-on activities that develop proficiency in AI-oriented workflows leveraging Azure Machine Learning Workbench and Services, the Team Data Science Process, Visual Studio Team Services, and Azure Container Services. You can find details about the worksohp [here](https://github.com/Azure/LearnAI-Bootcamp/blob/master/proaidev_bootcamp.md).
+In this workshop, you will complete a web app using Machine Learning to predict travel delays given flight delay data and weather conditions, plan the bulk data import operation, followed by preparation tasks, such as cleaning and manipulating the data for testing, and training your Machine Learning model. You can find details about the worksohp [here](http://bit.ly/Bigdata-doc-v1).
 
 # Sign-up for Workshop Environment
 
@@ -15,7 +15,7 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 * Wait for the lab environment to be provisioned. Sometimes this can take upto **10 minutes**. Once environment provisioning is complete, you will receive details in email as well as in the browser.
  ![alt text](Images/04_lab_env_details.png)
  
- > Note: Lab environment is enabled only for specific duration or workshop end time - whichever is earlier. At the end of the allowed time, environment will be self-destructed. Also, for multi-day workshops, all virtual machines will be shutdown at 7 PM local time and start at 8AM local time.
+ > Note: Lab environment is enabled only for specific duration or workshop end time - whichever is earlier. At the end of the allowed time, environment will be self-destructed.
 
 # Verify the pre-provisioned Environment
 
