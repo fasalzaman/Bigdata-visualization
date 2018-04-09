@@ -71,7 +71,9 @@ In this exercise, you will deploy an intelligent web application to Azure from G
     *	Also, recall that you obtained the **Weather API key** back in the Task 3 of the prerequisite steps for the lab. Insert that key into the Weather Api Key field. 
 4.	Select **Next**, and on the following screen, **select Deploy**.
 5.	The page should begin deploying your application while showing you a status of what is currently happening. 
-NOTE: If you run into errors during the deployment that indicate a bad request or unauthorized, verify that the user you are logged into the portal with an account that is either a Service Administrator or a Co-Administrator. You won’t have permissions to deploy the website otherwise.
+
+> NOTE: If you run into errors during the deployment that indicate a bad request or unauthorized, verify that the user you are logged into the portal with an account that is either a Service Administrator or a Co-Administrator. You won’t have permissions to deploy the website otherwise.
+
 6.	After a short time, the deployment will complete, then go to **Azure portal**, Select the deployed web app.
 7. Copy the web app URL and navigate to the url by pasting it in a browser.
 8.	You can find the chances of delay by providing **origin, destination, date, and time** in the application. Your newly deployed web application will look like this.
